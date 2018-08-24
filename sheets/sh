@@ -4,7 +4,7 @@
 # 变量定义，注意：等号前后不能有空格
 BCS_URL=https://github.com/jiangxianzeng/bcs.sh
 
-# Shell if条件
+# if条件
 if condition1 ; then
     command1
 elif condition2 ; then 
@@ -13,7 +13,7 @@ else
     commandN
 fi
 
-# Shell if例子
+# if例子
 a=10
 b=20
 if [ $a == $b ] ; then
