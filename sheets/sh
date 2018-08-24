@@ -4,6 +4,10 @@
 # 变量定义，注意：等号前后不能有空格
 BCS_URL=https://github.com/jiangxianzeng/bcs.sh
 
+# 变量使用
+echo ${BCS_URL}  #推荐
+echo $BCS_URL
+
 # if条件
 if condition1 ; then
     command1
