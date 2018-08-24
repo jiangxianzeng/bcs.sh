@@ -1,5 +1,8 @@
 # bcs.sh
 Common commands
 
-# help
-./bcs.sh help
+# Usage
+./bcs.sh TOPIC
+
+# For Example
+./bcs.sh curl
