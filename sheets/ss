@@ -10,3 +10,15 @@ ss -l
 #查看进程使用的socket
 ss -pl
 
+#显示所有状态为Established的HTTP连接
+ss -o state established '( dport = :http or sport = :http )' 
+
+#用TCP 状态过滤Sockets;{all|established|syn-sent|syn-recv|fin-wait-{1,2}|time-wait|closed|close-wait|last-ack|listen|closing}
+ss -4 state {FILTER-NAME-HERE} 
+例如：ss -4 state time-wait  //过滤time-wait状态的信息
+
+#匹配远程地址和端口号
+ss dst 192.168.119.113:443
+
+#匹配本地地址和端口号
+ss src 192.168.119.103:80
