@@ -1,0 +1,12 @@
+#显示TCP连接
+ss -t -a
+
+#显示 Sockets 摘要
+ss -s
+
+#列出所有打开的网络连接端口
+ss -l
+
+#查看进程使用的socket
+ss -pl
+
