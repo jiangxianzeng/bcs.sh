@@ -1,0 +1,6 @@
+# 或操作  // 找出文件（filename）中包含123或者包含abc的行
+grep -E '123|abc' filename
+
+# 以递归的方式查找符合条件的文件
+grep -r '123' filename
+
