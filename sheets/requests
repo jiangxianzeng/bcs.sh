@@ -1,0 +1,17 @@
+#requests 常用函数
+
+#GET
+def get_html_try(url):
+    d_text = ""
+    try:
+        r = requests.get(url, timeout = 60)
+        if r.status_code == 200:
+            d_text = r.text
+        else:
+            pass
+    except requests.exceptions.RequestException as e:
+        print "request %s failed,  %s" % (url, e)
+    except Exception as e:
+        print "unkown error, %s" % e
+
+    return d_text
