@@ -3,3 +3,5 @@
 #!/usr/bin/python
 # -*- coding=utf-8 -*-
 
+#main
+if __name__ == "__main__":
